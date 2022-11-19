@@ -8,6 +8,10 @@ const catpix = [
   { url: "../images/cat3.jpg", alt: "hello once more kitty" },
   { url: "../images/cat4_3x2.jpg", alt: "hello again kitty" },
   {
+    url: "https://astro-image-array.netlify.app/images/cat1.jpg",
+    alt: "Hard coded",
+  },
+  {
     url: "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
     alt: "Google",
   },
@@ -16,6 +20,7 @@ const catpix = [
 
 <Layout title="Welcome to Astro.">
   <main>
+    https://astro-image-array.netlify.app/images/cat1.jpg
     <p>https://github.com/SaintSin/astro-array-images</p>
     {
       catpix.map((image, idx) => {
