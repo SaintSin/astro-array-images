@@ -4,7 +4,7 @@ import Card from "../components/Card.astro";
 import { Image, Picture } from "@astrojs/image/components";
 
 const catpix = [
-  { url: "@astroimage/images/cat1.jpg", alt: "hello kitty" },
+  { url: "../images/cat1.jpg", alt: "hello kitty" },
   { url: "../images/cat3.jpg", alt: "hello once more kitty" },
   { url: "../images/cat4_3x2.jpg", alt: "hello again kitty" },
   {
@@ -16,6 +16,7 @@ const catpix = [
 
 <Layout title="Welcome to Astro.">
   <main>
+    <p>https://github.com/SaintSin/astro-array-images</p>
     {
       catpix.map((image, idx) => {
         return (
